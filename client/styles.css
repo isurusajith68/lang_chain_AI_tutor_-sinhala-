@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #666;
+}
+
+.chat-container {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}
+
+.assistant-message strong {
+  font-weight: bold;
+}
+
+.sources {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+}
+
+.input-container {
+  display: flex;
+}
+
+#question-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+#ask-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+#ask-button:hover {
+  background-color: #218838;
+}
+
+#ask-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
